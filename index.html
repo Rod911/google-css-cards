@@ -1,0 +1,2149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Cricket</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
+
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="back"><img class="back-img" src="./img/left-arrow.png" alt="back"></div>
+        <div class="header">Australia vs England</div>
+        <div class="close">&times;</div>
+    </div>
+
+    <div class="container">
+        <div class="info-cards">
+            <div class="card">
+                <div class="head-content">
+                    <div class="date-text">
+                        <p class="grey">4-8 Sep</p>
+                    </div>
+                    <div class="match-result">
+                        <div class="country country-left">
+                            <img src="./img/flag.png" alt="flag" class="flag-lg">
+                            <p class="country-name">Australia</p>
+                        </div>
+                        <div class="runs">
+                            <p class="p1">497/8d</p>
+                            <p class="p1">186/6d</p>
+                        </div>
+                        <div class="pos runs grey">
+                            <p class="small-text">1st</p>
+                            <p class="small-text">2nd</p>
+                        </div>
+                        <div class="runs">
+                            <p>301</p>
+                            <p>197</p>
+                            <p class="small-text grey">Target 383</p>
+                        </div>
+                        <div class="country country-right">
+                            <img src="./img/flag2.png" alt="flag" class="flag-lg">
+                            <p class="country-name">England</p>
+                        </div>
+                    </div>
+                    <div class="additional-info">
+                        <div class="lead-line">
+                            <p class="small-text">AUS won by 185 runs</p>
+                        </div>
+                        <div class="sub-line grey">
+                            <p class="small-text">Test 4 of 5 (AUS leads 2-1) <span class="separator-bullet"> · </span>
+                                Day 5 <span class="separator-bullet"> · </span> Session 3</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-img">
+                    <img src="./img/vid.jpg" alt="vid" class="lead">
+                    <div class="img-overlay">
+                        <p class="subs">Match highlights <span class="separator-bullet"> · </span> 14:21</p>
+                    </div>
+                    <div class="play-video-icon">
+                        <!-- <img class="play" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0OCIgaGVpZ2h0PSI0OCIgdmlld0JveD0iMCAwIDQ4IDQ4IiBmaWxsPSIjZmZmIj48cGF0aCBkPSJNMjQgNEMxMi45NSA0IDQgMTIuOTUgNCAyNHM4Ljk1IDIwIDIwIDIwIDIwLTguOTUgMjAtMjBTMzUuMDUgNCAyNCA0em0tNCAyOVYxNWwxMiA5LTEyIDl6Ii8+PC9zdmc+" > -->
+                        <img src="./img/play.png" alt="play" class="play">
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="tabs">
+                    <div class="tab active" id="summaryTab" data-tab="summaryCard">
+                        <p>SUMMARY</p>
+                    </div>
+                    <div class="tab" id="scoreTab" data-tab="scoreCard">
+                        <p>SCORECARD</p>
+                    </div>
+                    <div class="tab" id="commentaryTab" data-tab="commentaryCard">
+                        <p>COMMENTARY</p>
+                    </div>
+                    <div class="tab" id="newsTab" data-tab="newsCard">
+                        <p>NEWS</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card tabbed" id="summaryCard">
+                <div class="sub-card">
+                    <div class="banner-item yellow">
+                        <div class="banner-info">
+                            <p class="banner-sub-text">Player of the match</p>
+                            <p class="banner-main-text">Steve Smith(AUS) <span class="separator-bullet"> · </span><span
+                                    class="banner-secondary-text">211 & 82</span></p>
+                        </div>
+                        <div class="banner-photo">
+                            <img src="./img/images.jpg" alt="player" class="photo">
+                        </div>
+                    </div>
+                </div>
+                <div class="divider">
+                    <div class="d-left"></div>
+                    <div class="d-center">
+                        <img src="./img/flag.png" alt="flag" class="flag-sm">
+                        <span class="d-country">Australia</span>
+                        <span class="separator-bullet"> · </span>
+                        <span class="d-score">497/8d</span>
+                        <span class="separator-bullet"> · </span>
+                        <span class="d-innings">1st innings</span>
+                    </div>
+                    <div class="d-right"></div>
+                </div>
+                <div class="sub-card">
+                    <div class="player-info-container">
+                        <div class="player-cards-left">
+                            <div class="player-card">
+                                <div class="player-img">
+                                    <img src="./img/images.jpg" alt="player" class="img-circle">
+                                </div>
+                                <div class="player-info">
+                                    <p class="player-name">Steve Smith</p>
+                                    <p class="player-score grey">211 (319)</p>
+                                </div>
+                            </div>
+                            <div class="player-card">
+                                <div class="player-img">
+                                    <img src="./img/images.jpg" alt="player" class="img-circle">
+                                </div>
+                                <div class="player-info">
+                                    <p class="player-name">Marnus Labuschagne</p>
+                                    <p class="player-score grey">211 (319)</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="player-cards-right">
+                            <div class="player-card">
+                                <div class="player-info">
+                                    <p class="player-name">Stuart Broad</p>
+                                    <p class="player-score grey">3/97 (25)</p>
+                                </div>
+                                <div class="player-img">
+                                    <img src="./img/images.jpg" alt="player" class="img-circle">
+                                </div>
+                            </div>
+                            <div class="player-card">
+                                <div class="player-info">
+                                    <p class="player-name">Jack Leach</p>
+                                    <p class="player-score grey">2/83 (26.1)</p>
+                                </div>
+                                <div class="player-img">
+                                    <img src="./img/images.jpg" alt="player" class="img-circle">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="divider">
+                    <div class="d-left"></div>
+                    <div class="d-center">
+                        <img src="./img/flag2.png" alt="flag" class="flag-sm">
+                        <span class="d-country">England</span>
+                        <span class="separator-bullet"> · </span>
+                        <span class="d-score">497/8d</span>
+                        <span class="separator-bullet"> · </span>
+                        <span class="d-innings">1st innings</span>
+                    </div>
+                    <div class="d-right"></div>
+                </div>
+                <div class="sub-card">
+                    <div class="player-info-container">
+                        <div class="player-cards-left">
+                            <div class="player-card">
+                                <div class="player-img">
+                                    <img src="./img/images.jpg" alt="player" class="img-circle">
+                                </div>
+                                <div class="player-info">
+                                    <p class="player-name">Rory Joseph Burns</p>
+                                    <p class="player-score grey">211 (319)</p>
+                                </div>
+                            </div>
+                            <div class="player-card">
+                                <div class="player-img">
+                                    <img src="./img/images.jpg" alt="player" class="img-circle">
+                                </div>
+                                <div class="player-info">
+                                    <p class="player-name">Joe Root</p>
+                                    <p class="player-score grey">211 (319)</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="player-cards-right">
+                            <div class="player-card">
+                                <div class="player-info">
+                                    <p class="player-name">Josh Hazlewood</p>
+                                    <p class="player-score grey">3/97 (25)</p>
+                                </div>
+                                <div class="player-img">
+                                    <img src="./img/images.jpg" alt="player" class="img-circle">
+                                </div>
+                            </div>
+                            <div class="player-card">
+                                <div class="player-info">
+                                    <p class="player-name">Pat Cummins</p>
+                                    <p class="player-score grey">2/83 (26.1)</p>
+                                </div>
+                                <div class="player-img">
+                                    <img src="./img/images.jpg" alt="player" class="img-circle">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="divider">
+                    <div class="d-left"></div>
+                    <div class="d-center">
+                        <img src="./img/flag.png" alt="flag" class="flag-sm">
+                        <span class="d-country">Australia</span>
+                        <span class="separator-bullet"> · </span>
+                        <span class="d-score">497/8d</span>
+                        <span class="separator-bullet"> · </span>
+                        <span class="d-innings">2nd innings</span>
+                    </div>
+                    <div class="d-right"></div>
+                </div>
+                <div class="sub-card">
+                    <div class="player-info-container">
+                        <div class="player-cards-left">
+                            <div class="player-card">
+                                <div class="player-img">
+                                    <img src="./img/images.jpg" alt="player" class="img-circle">
+                                </div>
+                                <div class="player-info">
+                                    <p class="player-name">Steve Smith</p>
+                                    <p class="player-score grey">211 (319)</p>
+                                </div>
+                            </div>
+                            <div class="player-card">
+                                <div class="player-img">
+                                    <img src="./img/images.jpg" alt="player" class="img-circle">
+                                </div>
+                                <div class="player-info">
+                                    <p class="player-name">Matthew Wade</p>
+                                    <p class="player-score grey">211 (319)</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="player-cards-right">
+                            <div class="player-card">
+                                <div class="player-info">
+                                    <p class="player-name">Jofra Archer</p>
+                                    <p class="player-score grey">3/97 (25)</p>
+                                </div>
+                                <div class="player-img">
+                                    <img src="./img/images.jpg" alt="player" class="img-circle">
+                                </div>
+                            </div>
+                            <div class="player-card">
+                                <div class="player-info">
+                                    <p class="player-name">Stuart Broad</p>
+                                    <p class="player-score grey">2/83 (26.1)</p>
+                                </div>
+                                <div class="player-img">
+                                    <img src="./img/images.jpg" alt="player" class="img-circle">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="divider">
+                    <div class="d-left"></div>
+                    <div class="d-center">
+                        <img src="./img/flag2.png" alt="flag" class="flag-sm">
+                        <span class="d-country">England</span>
+                        <span class="separator-bullet"> · </span>
+                        <span class="d-score">497/8d</span>
+                        <span class="separator-bullet"> · </span>
+                        <span class="d-innings">2nd innings</span>
+                    </div>
+                    <div class="d-right"></div>
+                </div>
+                <div class="sub-card">
+                    <div class="player-info-container">
+                        <div class="player-cards-left">
+                            <div class="player-card">
+                                <div class="player-img">
+                                    <img src="./img/images.jpg" alt="player" class="img-circle">
+                                </div>
+                                <div class="player-info">
+                                    <p class="player-name">Steve Smith</p>
+                                    <p class="player-score grey">211 (319)</p>
+                                </div>
+                            </div>
+                            <div class="player-card">
+                                <div class="player-img">
+                                    <img src="./img/images.jpg" alt="player" class="img-circle">
+                                </div>
+                                <div class="player-info">
+                                    <p class="player-name">Marnus</p>
+                                    <p class="player-score grey">211 (319)</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="player-cards-right">
+                            <div class="player-card">
+                                <div class="player-info">
+                                    <p class="player-name">Stuart</p>
+                                    <p class="player-score grey">3/97 (25)</p>
+                                </div>
+                                <div class="player-img">
+                                    <img src="./img/images.jpg" alt="player" class="img-circle">
+                                </div>
+                            </div>
+                            <div class="player-card">
+                                <div class="player-info">
+                                    <p class="player-name">Jack</p>
+                                    <p class="player-score grey">2/83 (26.1)</p>
+                                </div>
+                                <div class="player-img">
+                                    <img src="./img/images.jpg" alt="player" class="img-circle">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card tabbed" id="scoreCard">
+                <div class="inning-tabs">
+                    <div class="inn-tab" data-innTab="contentA1">
+                        <div>Australia</div>
+                        <div>1st Inn</div>
+                    </div>
+                    <div class="inn-tab" data-innTab="contentE1">
+                        <div>England</div>
+                        <div>1st Inn</div>
+                    </div>
+                    <div class="inn-tab" data-innTab="contentA2">
+                        <div>Australia</div>
+                        <div>2nd Inn</div>
+                    </div>
+                    <div class="inn-tab active" data-innTab="contentE2">
+                        <div>England</div>
+                        <div>2nd Inn</div>
+                    </div>
+                </div>
+                <div class="inn-tabs-container">
+                    <div class="inn-tab-content" id="contentA1">
+                        <div class="score-sub-card">
+                            <table>
+                                <thead class="score-head grey small-text">
+                                    <tr>
+                                        <th>Batting</th>
+                                        <th class="spacer"></th>
+                                        <th>R</th>
+                                        <th>B</th>
+                                        <th>4s</th>
+                                        <th>6s</th>
+                                        <th>S/R</th>
+                                        <th class="ender"></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td rowspan="2">img</td>
+                                        <td>Marcus Harris</td>
+                                        <td>13</td>
+                                        <td>24</td>
+                                        <td>1</td>
+                                        <td>0</td>
+                                        <td>54.17</td>
+                                        <td class="ender"></td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="6">
+                                            <div class="expandable">
+                                                <div class="expand-head">
+                                                    <div class="expander">
+                                                        <p class="icon-down"></p>
+                                                    </div>
+                                                    <div class="expand-title">lbw b Stuart Board</div>
+                                                </div>
+                                                <div class="expand-body">
+                                                    <p class="expand-text">
+                                                        <span class="expand-lead">6.6</span>
+                                                        <span class="expand-info">S Broad to Harris, OUT! LBW! The review is retained but Australia lose their second wicket in the form of Marcus Harris. This was pitched on a length around the fourth stump line by Broad, he gets it to angle into the southpaw. Harris looks to come on the front foot and defend it but misses the ball to get hit high on the pad. The English players appeal and the umpire raises his finger after thinking for a long time. Harris is not totally convinced that this would hit the stumps. He has a chat with Labuschagne at the non-striker's end and goes for the review at the last second. Ultra Edge comes in and shows no edge on that. Ball Tracker comes in now, pitching outside off, impact in line and wickets CLIPPING! It is just touching the top of middle and leg poles and thus it is Umpire's call. Australia in a spot of bother now.</span>
+                                                        <span class="expand-end">28/2</span>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                                <tbody>
+                                    <tr>
+                                        <td rowspan="2">img</td>
+                                        <td>Marcus Harris</td>
+                                        <td>13</td>
+                                        <td>24</td>
+                                        <td>1</td>
+                                        <td>0</td>
+                                        <td>54.17</td>
+                                        <td class="ender"></td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="6">
+                                            <div class="expandable">
+                                                <div class="expand-head">
+                                                    <div class="expander">
+                                                        <p class="icon-down"></p>
+                                                    </div>
+                                                    <div class="expand-title">lbw b Stuart Board</div>
+                                                </div>
+                                                <div class="expand-body">
+                                                    <p class="expand-text">
+                                                        <span class="expand-lead">6.6</span>
+                                                        <span class="expand-info">S Broad to Harris, OUT! LBW! The review is retained but Australia lose their second wicket in the form of Marcus Harris. This was pitched on a length around the fourth stump line by Broad, he gets it to angle into the southpaw. Harris looks to come on the front foot and defend it but misses the ball to get hit high on the pad. The English players appeal and the umpire raises his finger after thinking for a long time. Harris is not totally convinced that this would hit the stumps. He has a chat with Labuschagne at the non-striker's end and goes for the review at the last second. Ultra Edge comes in and shows no edge on that. Ball Tracker comes in now, pitching outside off, impact in line and wickets CLIPPING! It is just touching the top of middle and leg poles and thus it is Umpire's call. Australia in a spot of bother now.</span>
+                                                        <span class="expand-end">28/2</span>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                                <tbody>
+                                    <tr>
+                                        <td rowspan="2">img</td>
+                                        <td>Marcus Harris</td>
+                                        <td>13</td>
+                                        <td>24</td>
+                                        <td>1</td>
+                                        <td>0</td>
+                                        <td>54.17</td>
+                                        <td class="ender"></td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="6">
+                                            <div class="expandable">
+                                                <div class="expand-head">
+                                                    <div class="expander">
+                                                        <p class="icon-down"></p>
+                                                    </div>
+                                                    <div class="expand-title">lbw b Stuart Board</div>
+                                                </div>
+                                                <div class="expand-body">
+                                                    <p class="expand-text">
+                                                        <span class="expand-lead">6.6</span>
+                                                        <span class="expand-info">S Broad to Harris, OUT! LBW! The review is retained but Australia lose their second wicket in the form of Marcus Harris. This was pitched on a length around the fourth stump line by Broad, he gets it to angle into the southpaw. Harris looks to come on the front foot and defend it but misses the ball to get hit high on the pad. The English players appeal and the umpire raises his finger after thinking for a long time. Harris is not totally convinced that this would hit the stumps. He has a chat with Labuschagne at the non-striker's end and goes for the review at the last second. Ultra Edge comes in and shows no edge on that. Ball Tracker comes in now, pitching outside off, impact in line and wickets CLIPPING! It is just touching the top of middle and leg poles and thus it is Umpire's call. Australia in a spot of bother now.</span>
+                                                        <span class="expand-end">28/2</span>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                                <tbody>
+                                    <tr>
+                                        <td rowspan="2">img</td>
+                                        <td>Marcus Harris</td>
+                                        <td>13</td>
+                                        <td>24</td>
+                                        <td>1</td>
+                                        <td>0</td>
+                                        <td>54.17</td>
+                                        <td class="ender"></td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="6">
+                                            <div class="expandable">
+                                                <div class="expand-head">
+                                                    <div class="expander">
+                                                        <p class="icon-down"></p>
+                                                    </div>
+                                                    <div class="expand-title">lbw b Stuart Board</div>
+                                                </div>
+                                                <div class="expand-body">
+                                                    <p class="expand-text">
+                                                        <span class="expand-lead">6.6</span>
+                                                        <span class="expand-info">S Broad to Harris, OUT! LBW! The review is retained but Australia lose their second wicket in the form of Marcus Harris. This was pitched on a length around the fourth stump line by Broad, he gets it to angle into the southpaw. Harris looks to come on the front foot and defend it but misses the ball to get hit high on the pad. The English players appeal and the umpire raises his finger after thinking for a long time. Harris is not totally convinced that this would hit the stumps. He has a chat with Labuschagne at the non-striker's end and goes for the review at the last second. Ultra Edge comes in and shows no edge on that. Ball Tracker comes in now, pitching outside off, impact in line and wickets CLIPPING! It is just touching the top of middle and leg poles and thus it is Umpire's call. Australia in a spot of bother now.</span>
+                                                        <span class="expand-end">28/2</span>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                                <tbody>
+                                    <tr>
+                                        <td rowspan="2">img</td>
+                                        <td>Marcus Harris</td>
+                                        <td>13</td>
+                                        <td>24</td>
+                                        <td>1</td>
+                                        <td>0</td>
+                                        <td>54.17</td>
+                                        <td class="ender"></td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="6">
+                                            <div class="expandable">
+                                                <div class="expand-head">
+                                                    <div class="expander">
+                                                        <p class="icon-down"></p>
+                                                    </div>
+                                                    <div class="expand-title">lbw b Stuart Board</div>
+                                                </div>
+                                                <div class="expand-body">
+                                                    <p class="expand-text">
+                                                        <span class="expand-lead">6.6</span>
+                                                        <span class="expand-info">S Broad to Harris, OUT! LBW! The review is retained but Australia lose their second wicket in the form of Marcus Harris. This was pitched on a length around the fourth stump line by Broad, he gets it to angle into the southpaw. Harris looks to come on the front foot and defend it but misses the ball to get hit high on the pad. The English players appeal and the umpire raises his finger after thinking for a long time. Harris is not totally convinced that this would hit the stumps. He has a chat with Labuschagne at the non-striker's end and goes for the review at the last second. Ultra Edge comes in and shows no edge on that. Ball Tracker comes in now, pitching outside off, impact in line and wickets CLIPPING! It is just touching the top of middle and leg poles and thus it is Umpire's call. Australia in a spot of bother now.</span>
+                                                        <span class="expand-end">28/2</span>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                                <tbody>
+                                    <tr>
+                                        <td rowspan="2">img</td>
+                                        <td>Marcus Harris</td>
+                                        <td>13</td>
+                                        <td>24</td>
+                                        <td>1</td>
+                                        <td>0</td>
+                                        <td>54.17</td>
+                                        <td class="ender"></td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="6">
+                                            <div class="expandable">
+                                                <div class="expand-head">
+                                                    <div class="expander">
+                                                        <p class="icon-down"></p>
+                                                    </div>
+                                                    <div class="expand-title">lbw b Stuart Board</div>
+                                                </div>
+                                                <div class="expand-body">
+                                                    <p class="expand-text">
+                                                        <span class="expand-lead">6.6</span>
+                                                        <span class="expand-info">S Broad to Harris, OUT! LBW! The review is retained but Australia lose their second wicket in the form of Marcus Harris. This was pitched on a length around the fourth stump line by Broad, he gets it to angle into the southpaw. Harris looks to come on the front foot and defend it but misses the ball to get hit high on the pad. The English players appeal and the umpire raises his finger after thinking for a long time. Harris is not totally convinced that this would hit the stumps. He has a chat with Labuschagne at the non-striker's end and goes for the review at the last second. Ultra Edge comes in and shows no edge on that. Ball Tracker comes in now, pitching outside off, impact in line and wickets CLIPPING! It is just touching the top of middle and leg poles and thus it is Umpire's call. Australia in a spot of bother now.</span>
+                                                        <span class="expand-end">28/2</span>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                                <tbody>
+                                    <tr>
+                                        <td rowspan="2">img</td>
+                                        <td>Marcus Harris</td>
+                                        <td>13</td>
+                                        <td>24</td>
+                                        <td>1</td>
+                                        <td>0</td>
+                                        <td>54.17</td>
+                                        <td class="ender"></td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="6">
+                                            <div class="expandable">
+                                                <div class="expand-head">
+                                                    <div class="expander">
+                                                        <p class="icon-down"></p>
+                                                    </div>
+                                                    <div class="expand-title">lbw b Stuart Board</div>
+                                                </div>
+                                                <div class="expand-body">
+                                                    <p class="expand-text">
+                                                        <span class="expand-lead">6.6</span>
+                                                        <span class="expand-info">S Broad to Harris, OUT! LBW! The review is retained but Australia lose their second wicket in the form of Marcus Harris. This was pitched on a length around the fourth stump line by Broad, he gets it to angle into the southpaw. Harris looks to come on the front foot and defend it but misses the ball to get hit high on the pad. The English players appeal and the umpire raises his finger after thinking for a long time. Harris is not totally convinced that this would hit the stumps. He has a chat with Labuschagne at the non-striker's end and goes for the review at the last second. Ultra Edge comes in and shows no edge on that. Ball Tracker comes in now, pitching outside off, impact in line and wickets CLIPPING! It is just touching the top of middle and leg poles and thus it is Umpire's call. Australia in a spot of bother now.</span>
+                                                        <span class="expand-end">28/2</span>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                                <tbody>
+                                    <tr>
+                                        <td rowspan="2">img</td>
+                                        <td>Marcus Harris</td>
+                                        <td>13</td>
+                                        <td>24</td>
+                                        <td>1</td>
+                                        <td>0</td>
+                                        <td>54.17</td>
+                                        <td class="ender"></td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="6">
+                                            <div class="expandable">
+                                                <div class="expand-head">
+                                                    <div class="expander">
+                                                        <p class="icon-down"></p>
+                                                    </div>
+                                                    <div class="expand-title">lbw b Stuart Board</div>
+                                                </div>
+                                                <div class="expand-body">
+                                                    <p class="expand-text">
+                                                        <span class="expand-lead">6.6</span>
+                                                        <span class="expand-info">S Broad to Harris, OUT! LBW! The review is retained but Australia lose their second wicket in the form of Marcus Harris. This was pitched on a length around the fourth stump line by Broad, he gets it to angle into the southpaw. Harris looks to come on the front foot and defend it but misses the ball to get hit high on the pad. The English players appeal and the umpire raises his finger after thinking for a long time. Harris is not totally convinced that this would hit the stumps. He has a chat with Labuschagne at the non-striker's end and goes for the review at the last second. Ultra Edge comes in and shows no edge on that. Ball Tracker comes in now, pitching outside off, impact in line and wickets CLIPPING! It is just touching the top of middle and leg poles and thus it is Umpire's call. Australia in a spot of bother now.</span>
+                                                        <span class="expand-end">28/2</span>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                                <tbody>
+                                    <tr>
+                                        <td rowspan="2">img</td>
+                                        <td>Marcus Harris</td>
+                                        <td>13</td>
+                                        <td>24</td>
+                                        <td>1</td>
+                                        <td>0</td>
+                                        <td>54.17</td>
+                                        <td class="ender"></td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="6">
+                                            <div class="expandable">
+                                                <div class="expand-head">
+                                                    <div class="expander">
+                                                        <p class="icon-down"></p>
+                                                    </div>
+                                                    <div class="expand-title">lbw b Stuart Board</div>
+                                                </div>
+                                                <div class="expand-body">
+                                                    <p class="expand-text">
+                                                        <span class="expand-lead">6.6</span>
+                                                        <span class="expand-info">S Broad to Harris, OUT! LBW! The review is retained but Australia lose their second wicket in the form of Marcus Harris. This was pitched on a length around the fourth stump line by Broad, he gets it to angle into the southpaw. Harris looks to come on the front foot and defend it but misses the ball to get hit high on the pad. The English players appeal and the umpire raises his finger after thinking for a long time. Harris is not totally convinced that this would hit the stumps. He has a chat with Labuschagne at the non-striker's end and goes for the review at the last second. Ultra Edge comes in and shows no edge on that. Ball Tracker comes in now, pitching outside off, impact in line and wickets CLIPPING! It is just touching the top of middle and leg poles and thus it is Umpire's call. Australia in a spot of bother now.</span>
+                                                        <span class="expand-end">28/2</span>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                                <tbody>
+                                    <tr>
+                                        <td rowspan="2">img</td>
+                                        <td>Marcus Harris</td>
+                                        <td>13</td>
+                                        <td>24</td>
+                                        <td>1</td>
+                                        <td>0</td>
+                                        <td>54.17</td>
+                                        <td class="ender"></td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="6">
+                                            <div class="expandable">
+                                                <div class="expand-head">
+                                                    <div class="expander">
+                                                        <p class="icon-down"></p>
+                                                    </div>
+                                                    <div class="expand-title">lbw b Stuart Board</div>
+                                                </div>
+                                                <div class="expand-body">
+                                                    <p class="expand-text">
+                                                        <span class="expand-lead">6.6</span>
+                                                        <span class="expand-info">S Broad to Harris, OUT! LBW! The review is retained but Australia lose their second wicket in the form of Marcus Harris. This was pitched on a length around the fourth stump line by Broad, he gets it to angle into the southpaw. Harris looks to come on the front foot and defend it but misses the ball to get hit high on the pad. The English players appeal and the umpire raises his finger after thinking for a long time. Harris is not totally convinced that this would hit the stumps. He has a chat with Labuschagne at the non-striker's end and goes for the review at the last second. Ultra Edge comes in and shows no edge on that. Ball Tracker comes in now, pitching outside off, impact in line and wickets CLIPPING! It is just touching the top of middle and leg poles and thus it is Umpire's call. Australia in a spot of bother now.</span>
+                                                        <span class="expand-end">28/2</span>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                                <tbody>
+                                    <tr>
+                                        <td>Extras</td>
+                                        <td>29</td>
+                                        <td>(NB 4, W 3, B 8, LB 14)</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Total runs</td>
+                                        <td>497</td>
+                                        <td>(8 wkts, 126 ov)</td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="6">
+                                            <div class="">Yet to bat</div>
+                                            <div class="">
+                                                <span>Josh Hazlewood</span>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="6">
+                                            <div class="">Fall of wickets</div>
+                                            <div class="">
+                                                <span>
+                                                    <span>1/1</span>
+                                                    <span>(D. Warner, 0.4 ov)</span>
+                                                    <span> · </span>
+                                                </span>
+                                                <span>
+                                                    <span>28/2</span>
+                                                    <span>(M. Harris, 6.6 ov)</span>
+                                                    <span> · </span>
+                                                </span>
+                                                <span>
+                                                    <span>144/3</span>
+                                                    <span>(M. Labuschagne, 39.2 ov)</span>
+                                                    <span> · </span>
+                                                </span>
+                                                <span>
+                                                    <span>183/4</span>
+                                                    <span>(T. Head, 48.4 ov)</span>
+                                                    <span></span>
+                                                </span>
+                                                <span>
+                                                    <span>245/5</span>
+                                                    <span>(M. Wade, 60.5 ov)</span>
+                                                    <span></span>
+                                                </span>
+                                                <span>
+                                                    <span>396</span>
+                                                    <span>(T. Paine, 101.1 ov)</span>
+                                                    <span></span>
+                                                </span>
+                                                <span>
+                                                    <span>387/7</span>
+                                                    <span>(P. Cummins, 104.6 ov)</span>
+                                                    <span></span>
+                                                </span>
+                                                <span>
+                                                    <span>438/8</span>
+                                                    <span>(S. Smith, 117.5 ov)</span>
+                                                </span>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="score-divider"></div>
+                        <div class="score-sub-card">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Bowling</th>
+                                        <th></th>
+                                        <th>O</th>
+                                        <th>M</th>
+                                        <th>R</th>
+                                        <th>W</th>
+                                        <th>Econ</th>
+                                        <th></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <img src="" alt="">
+                                        </td>
+                                        <td>Stuart Board</td>
+                                        <td>25.0</td>
+                                        <td>2</td>
+                                        <td>97</td>
+                                        <td>3</td>
+                                        <td>3.88</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr></tr>
+                                </tbody>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <img src="" alt="">
+                                        </td>
+                                        <td>Stuart Board</td>
+                                        <td>25.0</td>
+                                        <td>2</td>
+                                        <td>97</td>
+                                        <td>3</td>
+                                        <td>3.88</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr></tr>
+                                </tbody>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <img src="" alt="">
+                                        </td>
+                                        <td>Stuart Board</td>
+                                        <td>25.0</td>
+                                        <td>2</td>
+                                        <td>97</td>
+                                        <td>3</td>
+                                        <td>3.88</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr></tr>
+                                </tbody>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <img src="" alt="">
+                                        </td>
+                                        <td>Stuart Board</td>
+                                        <td>25.0</td>
+                                        <td>2</td>
+                                        <td>97</td>
+                                        <td>3</td>
+                                        <td>3.88</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr></tr>
+                                </tbody>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <img src="" alt="">
+                                        </td>
+                                        <td>Stuart Board</td>
+                                        <td>25.0</td>
+                                        <td>2</td>
+                                        <td>97</td>
+                                        <td>3</td>
+                                        <td>3.88</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr></tr>
+                                </tbody>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <img src="" alt="">
+                                        </td>
+                                        <td>Stuart Board</td>
+                                        <td>25.0</td>
+                                        <td>2</td>
+                                        <td>97</td>
+                                        <td>3</td>
+                                        <td>3.88</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr></tr>
+                                </tbody>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <img src="" alt="">
+                                        </td>
+                                        <td>Stuart Board</td>
+                                        <td>25.0</td>
+                                        <td>2</td>
+                                        <td>97</td>
+                                        <td>3</td>
+                                        <td>3.88</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr></tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="inn-tab-content" id="contentE1">
+                        <div class="score-sub-card">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Batting</th>
+                                        <th>R</th>
+                                        <th class="spacer"></th>
+                                        <th>B</th>
+                                        <th>4s</th>
+                                        <th>6s</th>
+                                        <th>S/R</th>
+                                        <th class="ender"></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td rowspan="2">img</td>
+                                        <td>Marcus Harris</td>
+                                        <td>13</td>
+                                        <td>24</td>
+                                        <td>1</td>
+                                        <td>0</td>
+                                        <td>54.17</td>
+                                        <td class="ender"></td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="6">
+                                            <div class="expandable">
+                                                <div class="expand-head">
+                                                    <div class="expander">
+                                                        <p class="icon-down"></p>
+                                                    </div>
+                                                    <div class="expand-title">lbw b Stuart Board</div>
+                                                </div>
+                                                <div class="expand-body">
+                                                    <p class="expand-text">
+                                                        <span class="expand-lead">6.6</span>
+                                                        <span class="expand-info">S Broad to Harris, OUT! LBW! The review is retained but Australia lose their second wicket in the form of Marcus Harris. This was pitched on a length around the fourth stump line by Broad, he gets it to angle into the southpaw. Harris looks to come on the front foot and defend it but misses the ball to get hit high on the pad. The English players appeal and the umpire raises his finger after thinking for a long time. Harris is not totally convinced that this would hit the stumps. He has a chat with Labuschagne at the non-striker's end and goes for the review at the last second. Ultra Edge comes in and shows no edge on that. Ball Tracker comes in now, pitching outside off, impact in line and wickets CLIPPING! It is just touching the top of middle and leg poles and thus it is Umpire's call. Australia in a spot of bother now.</span>
+                                                        <span class="expand-end">28/2</span>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                                <tbody>
+                                    <tr>
+                                        <td rowspan="2">img</td>
+                                        <td>Marcus Harris</td>
+                                        <td>13</td>
+                                        <td>24</td>
+                                        <td>1</td>
+                                        <td>0</td>
+                                        <td>54.17</td>
+                                        <td class="ender"></td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="6">
+                                            <div class="expandable">
+                                                <div class="expand-head">
+                                                    <div class="expander">
+                                                        <p class="icon-down"></p>
+                                                    </div>
+                                                    <div class="expand-title">lbw b Stuart Board</div>
+                                                </div>
+                                                <div class="expand-body">
+                                                    <p class="expand-text">
+                                                        <span class="expand-lead">6.6</span>
+                                                        <span class="expand-info">S Broad to Harris, OUT! LBW! The review is retained but Australia lose their second wicket in the form of Marcus Harris. This was pitched on a length around the fourth stump line by Broad, he gets it to angle into the southpaw. Harris looks to come on the front foot and defend it but misses the ball to get hit high on the pad. The English players appeal and the umpire raises his finger after thinking for a long time. Harris is not totally convinced that this would hit the stumps. He has a chat with Labuschagne at the non-striker's end and goes for the review at the last second. Ultra Edge comes in and shows no edge on that. Ball Tracker comes in now, pitching outside off, impact in line and wickets CLIPPING! It is just touching the top of middle and leg poles and thus it is Umpire's call. Australia in a spot of bother now.</span>
+                                                        <span class="expand-end">28/2</span>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                                <tbody>
+                                    <tr>
+                                        <td rowspan="2">img</td>
+                                        <td>Marcus Harris</td>
+                                        <td>13</td>
+                                        <td>24</td>
+                                        <td>1</td>
+                                        <td>0</td>
+                                        <td>54.17</td>
+                                        <td class="ender"></td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="6">
+                                            <div class="expandable">
+                                                <div class="expand-head">
+                                                    <div class="expander">
+                                                        <p class="icon-down"></p>
+                                                    </div>
+                                                    <div class="expand-title">lbw b Stuart Board</div>
+                                                </div>
+                                                <div class="expand-body">
+                                                    <p class="expand-text">
+                                                        <span class="expand-lead">6.6</span>
+                                                        <span class="expand-info">S Broad to Harris, OUT! LBW! The review is retained but Australia lose their second wicket in the form of Marcus Harris. This was pitched on a length around the fourth stump line by Broad, he gets it to angle into the southpaw. Harris looks to come on the front foot and defend it but misses the ball to get hit high on the pad. The English players appeal and the umpire raises his finger after thinking for a long time. Harris is not totally convinced that this would hit the stumps. He has a chat with Labuschagne at the non-striker's end and goes for the review at the last second. Ultra Edge comes in and shows no edge on that. Ball Tracker comes in now, pitching outside off, impact in line and wickets CLIPPING! It is just touching the top of middle and leg poles and thus it is Umpire's call. Australia in a spot of bother now.</span>
+                                                        <span class="expand-end">28/2</span>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                                <tbody>
+                                    <tr>
+                                        <td rowspan="2">img</td>
+                                        <td>Marcus Harris</td>
+                                        <td>13</td>
+                                        <td>24</td>
+                                        <td>1</td>
+                                        <td>0</td>
+                                        <td>54.17</td>
+                                        <td class="ender"></td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="6">
+                                            <div class="expandable">
+                                                <div class="expand-head">
+                                                    <div class="expander">
+                                                        <p class="icon-down"></p>
+                                                    </div>
+                                                    <div class="expand-title">lbw b Stuart Board</div>
+                                                </div>
+                                                <div class="expand-body">
+                                                    <p class="expand-text">
+                                                        <span class="expand-lead">6.6</span>
+                                                        <span class="expand-info">S Broad to Harris, OUT! LBW! The review is retained but Australia lose their second wicket in the form of Marcus Harris. This was pitched on a length around the fourth stump line by Broad, he gets it to angle into the southpaw. Harris looks to come on the front foot and defend it but misses the ball to get hit high on the pad. The English players appeal and the umpire raises his finger after thinking for a long time. Harris is not totally convinced that this would hit the stumps. He has a chat with Labuschagne at the non-striker's end and goes for the review at the last second. Ultra Edge comes in and shows no edge on that. Ball Tracker comes in now, pitching outside off, impact in line and wickets CLIPPING! It is just touching the top of middle and leg poles and thus it is Umpire's call. Australia in a spot of bother now.</span>
+                                                        <span class="expand-end">28/2</span>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                                <tbody>
+                                    <tr>
+                                        <td rowspan="2">img</td>
+                                        <td>Marcus Harris</td>
+                                        <td>13</td>
+                                        <td>24</td>
+                                        <td>1</td>
+                                        <td>0</td>
+                                        <td>54.17</td>
+                                        <td class="ender"></td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="6">
+                                            <div class="expandable">
+                                                <div class="expand-head">
+                                                    <div class="expander">
+                                                        <p class="icon-down"></p>
+                                                    </div>
+                                                    <div class="expand-title">lbw b Stuart Board</div>
+                                                </div>
+                                                <div class="expand-body">
+                                                    <p class="expand-text">
+                                                        <span class="expand-lead">6.6</span>
+                                                        <span class="expand-info">S Broad to Harris, OUT! LBW! The review is retained but Australia lose their second wicket in the form of Marcus Harris. This was pitched on a length around the fourth stump line by Broad, he gets it to angle into the southpaw. Harris looks to come on the front foot and defend it but misses the ball to get hit high on the pad. The English players appeal and the umpire raises his finger after thinking for a long time. Harris is not totally convinced that this would hit the stumps. He has a chat with Labuschagne at the non-striker's end and goes for the review at the last second. Ultra Edge comes in and shows no edge on that. Ball Tracker comes in now, pitching outside off, impact in line and wickets CLIPPING! It is just touching the top of middle and leg poles and thus it is Umpire's call. Australia in a spot of bother now.</span>
+                                                        <span class="expand-end">28/2</span>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                                <tbody>
+                                    <tr>
+                                        <td rowspan="2">img</td>
+                                        <td>Marcus Harris</td>
+                                        <td>13</td>
+                                        <td>24</td>
+                                        <td>1</td>
+                                        <td>0</td>
+                                        <td>54.17</td>
+                                        <td class="ender"></td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="6">
+                                            <div class="expandable">
+                                                <div class="expand-head">
+                                                    <div class="expander">
+                                                        <p class="icon-down"></p>
+                                                    </div>
+                                                    <div class="expand-title">lbw b Stuart Board</div>
+                                                </div>
+                                                <div class="expand-body">
+                                                    <p class="expand-text">
+                                                        <span class="expand-lead">6.6</span>
+                                                        <span class="expand-info">S Broad to Harris, OUT! LBW! The review is retained but Australia lose their second wicket in the form of Marcus Harris. This was pitched on a length around the fourth stump line by Broad, he gets it to angle into the southpaw. Harris looks to come on the front foot and defend it but misses the ball to get hit high on the pad. The English players appeal and the umpire raises his finger after thinking for a long time. Harris is not totally convinced that this would hit the stumps. He has a chat with Labuschagne at the non-striker's end and goes for the review at the last second. Ultra Edge comes in and shows no edge on that. Ball Tracker comes in now, pitching outside off, impact in line and wickets CLIPPING! It is just touching the top of middle and leg poles and thus it is Umpire's call. Australia in a spot of bother now.</span>
+                                                        <span class="expand-end">28/2</span>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                                <tbody>
+                                    <tr>
+                                        <td rowspan="2">img</td>
+                                        <td>Marcus Harris</td>
+                                        <td>13</td>
+                                        <td>24</td>
+                                        <td>1</td>
+                                        <td>0</td>
+                                        <td>54.17</td>
+                                        <td class="ender"></td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="6">
+                                            <div class="expandable">
+                                                <div class="expand-head">
+                                                    <div class="expander">
+                                                        <p class="icon-down"></p>
+                                                    </div>
+                                                    <div class="expand-title">lbw b Stuart Board</div>
+                                                </div>
+                                                <div class="expand-body">
+                                                    <p class="expand-text">
+                                                        <span class="expand-lead">6.6</span>
+                                                        <span class="expand-info">S Broad to Harris, OUT! LBW! The review is retained but Australia lose their second wicket in the form of Marcus Harris. This was pitched on a length around the fourth stump line by Broad, he gets it to angle into the southpaw. Harris looks to come on the front foot and defend it but misses the ball to get hit high on the pad. The English players appeal and the umpire raises his finger after thinking for a long time. Harris is not totally convinced that this would hit the stumps. He has a chat with Labuschagne at the non-striker's end and goes for the review at the last second. Ultra Edge comes in and shows no edge on that. Ball Tracker comes in now, pitching outside off, impact in line and wickets CLIPPING! It is just touching the top of middle and leg poles and thus it is Umpire's call. Australia in a spot of bother now.</span>
+                                                        <span class="expand-end">28/2</span>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                                <tbody>
+                                    <tr>
+                                        <td rowspan="2">img</td>
+                                        <td>Marcus Harris</td>
+                                        <td>13</td>
+                                        <td>24</td>
+                                        <td>1</td>
+                                        <td>0</td>
+                                        <td>54.17</td>
+                                        <td class="ender"></td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="6">
+                                            <div class="expandable">
+                                                <div class="expand-head">
+                                                    <div class="expander">
+                                                        <p class="icon-down"></p>
+                                                    </div>
+                                                    <div class="expand-title">lbw b Stuart Board</div>
+                                                </div>
+                                                <div class="expand-body">
+                                                    <p class="expand-text">
+                                                        <span class="expand-lead">6.6</span>
+                                                        <span class="expand-info">S Broad to Harris, OUT! LBW! The review is retained but Australia lose their second wicket in the form of Marcus Harris. This was pitched on a length around the fourth stump line by Broad, he gets it to angle into the southpaw. Harris looks to come on the front foot and defend it but misses the ball to get hit high on the pad. The English players appeal and the umpire raises his finger after thinking for a long time. Harris is not totally convinced that this would hit the stumps. He has a chat with Labuschagne at the non-striker's end and goes for the review at the last second. Ultra Edge comes in and shows no edge on that. Ball Tracker comes in now, pitching outside off, impact in line and wickets CLIPPING! It is just touching the top of middle and leg poles and thus it is Umpire's call. Australia in a spot of bother now.</span>
+                                                        <span class="expand-end">28/2</span>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                                <tbody>
+                                    <tr>
+                                        <td rowspan="2">img</td>
+                                        <td>Marcus Harris</td>
+                                        <td>13</td>
+                                        <td>24</td>
+                                        <td>1</td>
+                                        <td>0</td>
+                                        <td>54.17</td>
+                                        <td class="ender"></td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="6">
+                                            <div class="expandable">
+                                                <div class="expand-head">
+                                                    <div class="expander">
+                                                        <p class="icon-down"></p>
+                                                    </div>
+                                                    <div class="expand-title">lbw b Stuart Board</div>
+                                                </div>
+                                                <div class="expand-body">
+                                                    <p class="expand-text">
+                                                        <span class="expand-lead">6.6</span>
+                                                        <span class="expand-info">S Broad to Harris, OUT! LBW! The review is retained but Australia lose their second wicket in the form of Marcus Harris. This was pitched on a length around the fourth stump line by Broad, he gets it to angle into the southpaw. Harris looks to come on the front foot and defend it but misses the ball to get hit high on the pad. The English players appeal and the umpire raises his finger after thinking for a long time. Harris is not totally convinced that this would hit the stumps. He has a chat with Labuschagne at the non-striker's end and goes for the review at the last second. Ultra Edge comes in and shows no edge on that. Ball Tracker comes in now, pitching outside off, impact in line and wickets CLIPPING! It is just touching the top of middle and leg poles and thus it is Umpire's call. Australia in a spot of bother now.</span>
+                                                        <span class="expand-end">28/2</span>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                                <tbody>
+                                    <tr>
+                                        <td rowspan="2">img</td>
+                                        <td>Marcus Harris</td>
+                                        <td>13</td>
+                                        <td>24</td>
+                                        <td>1</td>
+                                        <td>0</td>
+                                        <td>54.17</td>
+                                        <td class="ender"></td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="6">
+                                            <div class="expandable">
+                                                <div class="expand-head">
+                                                    <div class="expander">
+                                                        <p class="icon-down"></p>
+                                                    </div>
+                                                    <div class="expand-title">lbw b Stuart Board</div>
+                                                </div>
+                                                <div class="expand-body">
+                                                    <p class="expand-text">
+                                                        <span class="expand-lead">6.6</span>
+                                                        <span class="expand-info">S Broad to Harris, OUT! LBW! The review is retained but Australia lose their second wicket in the form of Marcus Harris. This was pitched on a length around the fourth stump line by Broad, he gets it to angle into the southpaw. Harris looks to come on the front foot and defend it but misses the ball to get hit high on the pad. The English players appeal and the umpire raises his finger after thinking for a long time. Harris is not totally convinced that this would hit the stumps. He has a chat with Labuschagne at the non-striker's end and goes for the review at the last second. Ultra Edge comes in and shows no edge on that. Ball Tracker comes in now, pitching outside off, impact in line and wickets CLIPPING! It is just touching the top of middle and leg poles and thus it is Umpire's call. Australia in a spot of bother now.</span>
+                                                        <span class="expand-end">28/2</span>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                                <tbody>
+                                    <tr>
+                                        <td>Extras</td>
+                                        <td>29</td>
+                                        <td>(NB 4, W 3, B 8, LB 14)</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Total runs</td>
+                                        <td>497</td>
+                                        <td>(8 wkts, 126 ov)</td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="6">
+                                            <div class="">Yet to bat</div>
+                                            <div class="">
+                                                <span>Josh Hazlewood</span>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="6">
+                                            <div class="">Fall of wickets</div>
+                                            <div class="">
+                                                <span>
+                                                    <span>1/1</span>
+                                                    <span>(D. Warner, 0.4 ov)</span>
+                                                    <span> · </span>
+                                                </span>
+                                                <span>
+                                                    <span>28/2</span>
+                                                    <span>(M. Harris, 6.6 ov)</span>
+                                                    <span> · </span>
+                                                </span>
+                                                <span>
+                                                    <span>144/3</span>
+                                                    <span>(M. Labuschagne, 39.2 ov)</span>
+                                                    <span> · </span>
+                                                </span>
+                                                <span>
+                                                    <span>183/4</span>
+                                                    <span>(T. Head, 48.4 ov)</span>
+                                                    <span></span>
+                                                </span>
+                                                <span>
+                                                    <span>245/5</span>
+                                                    <span>(M. Wade, 60.5 ov)</span>
+                                                    <span></span>
+                                                </span>
+                                                <span>
+                                                    <span>396</span>
+                                                    <span>(T. Paine, 101.1 ov)</span>
+                                                    <span></span>
+                                                </span>
+                                                <span>
+                                                    <span>387/7</span>
+                                                    <span>(P. Cummins, 104.6 ov)</span>
+                                                    <span></span>
+                                                </span>
+                                                <span>
+                                                    <span>438/8</span>
+                                                    <span>(S. Smith, 117.5 ov)</span>
+                                                </span>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="score-divider"></div>
+                        <div class="score-sub-card">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Bowling</th>
+                                        <th></th>
+                                        <th>O</th>
+                                        <th>M</th>
+                                        <th>R</th>
+                                        <th>W</th>
+                                        <th>Econ</th>
+                                        <th></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <img src="" alt="">
+                                        </td>
+                                        <td>Stuart Board</td>
+                                        <td>25.0</td>
+                                        <td>2</td>
+                                        <td>97</td>
+                                        <td>3</td>
+                                        <td>3.88</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr></tr>
+                                </tbody>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <img src="" alt="">
+                                        </td>
+                                        <td>Stuart Board</td>
+                                        <td>25.0</td>
+                                        <td>2</td>
+                                        <td>97</td>
+                                        <td>3</td>
+                                        <td>3.88</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr></tr>
+                                </tbody>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <img src="" alt="">
+                                        </td>
+                                        <td>Stuart Board</td>
+                                        <td>25.0</td>
+                                        <td>2</td>
+                                        <td>97</td>
+                                        <td>3</td>
+                                        <td>3.88</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr></tr>
+                                </tbody>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <img src="" alt="">
+                                        </td>
+                                        <td>Stuart Board</td>
+                                        <td>25.0</td>
+                                        <td>2</td>
+                                        <td>97</td>
+                                        <td>3</td>
+                                        <td>3.88</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr></tr>
+                                </tbody>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <img src="" alt="">
+                                        </td>
+                                        <td>Stuart Board</td>
+                                        <td>25.0</td>
+                                        <td>2</td>
+                                        <td>97</td>
+                                        <td>3</td>
+                                        <td>3.88</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr></tr>
+                                </tbody>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <img src="" alt="">
+                                        </td>
+                                        <td>Stuart Board</td>
+                                        <td>25.0</td>
+                                        <td>2</td>
+                                        <td>97</td>
+                                        <td>3</td>
+                                        <td>3.88</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr></tr>
+                                </tbody>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <img src="" alt="">
+                                        </td>
+                                        <td>Stuart Board</td>
+                                        <td>25.0</td>
+                                        <td>2</td>
+                                        <td>97</td>
+                                        <td>3</td>
+                                        <td>3.88</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr></tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="inn-tab-content" id="contentA2">
+                        <div class="score-sub-card">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Batting</th>
+                                        <th>R</th>
+                                        <th class="spacer"></th>
+                                        <th>B</th>
+                                        <th>4s</th>
+                                        <th>6s</th>
+                                        <th>S/R</th>
+                                        <th class="ender"></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td rowspan="2">img</td>
+                                        <td>Marcus Harris</td>
+                                        <td>13</td>
+                                        <td>24</td>
+                                        <td>1</td>
+                                        <td>0</td>
+                                        <td>54.17</td>
+                                        <td class="ender"></td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="6">
+                                            <div class="expandable">
+                                                <div class="expand-head">
+                                                    <div class="expander">
+                                                        <p class="icon-down"></p>
+                                                    </div>
+                                                    <div class="expand-title">lbw b Stuart Board</div>
+                                                </div>
+                                                <div class="expand-body">
+                                                    <p class="expand-text">
+                                                        <span class="expand-lead">6.6</span>
+                                                        <span class="expand-info">S Broad to Harris, OUT! LBW! The review is retained but Australia lose their second wicket in the form of Marcus Harris. This was pitched on a length around the fourth stump line by Broad, he gets it to angle into the southpaw. Harris looks to come on the front foot and defend it but misses the ball to get hit high on the pad. The English players appeal and the umpire raises his finger after thinking for a long time. Harris is not totally convinced that this would hit the stumps. He has a chat with Labuschagne at the non-striker's end and goes for the review at the last second. Ultra Edge comes in and shows no edge on that. Ball Tracker comes in now, pitching outside off, impact in line and wickets CLIPPING! It is just touching the top of middle and leg poles and thus it is Umpire's call. Australia in a spot of bother now.</span>
+                                                        <span class="expand-end">28/2</span>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                                <tbody>
+                                    <tr>
+                                        <td rowspan="2">img</td>
+                                        <td>Marcus Harris</td>
+                                        <td>13</td>
+                                        <td>24</td>
+                                        <td>1</td>
+                                        <td>0</td>
+                                        <td>54.17</td>
+                                        <td class="ender"></td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="6">
+                                            <div class="expandable">
+                                                <div class="expand-head">
+                                                    <div class="expander">
+                                                        <p class="icon-down"></p>
+                                                    </div>
+                                                    <div class="expand-title">lbw b Stuart Board</div>
+                                                </div>
+                                                <div class="expand-body">
+                                                    <p class="expand-text">
+                                                        <span class="expand-lead">6.6</span>
+                                                        <span class="expand-info">S Broad to Harris, OUT! LBW! The review is retained but Australia lose their second wicket in the form of Marcus Harris. This was pitched on a length around the fourth stump line by Broad, he gets it to angle into the southpaw. Harris looks to come on the front foot and defend it but misses the ball to get hit high on the pad. The English players appeal and the umpire raises his finger after thinking for a long time. Harris is not totally convinced that this would hit the stumps. He has a chat with Labuschagne at the non-striker's end and goes for the review at the last second. Ultra Edge comes in and shows no edge on that. Ball Tracker comes in now, pitching outside off, impact in line and wickets CLIPPING! It is just touching the top of middle and leg poles and thus it is Umpire's call. Australia in a spot of bother now.</span>
+                                                        <span class="expand-end">28/2</span>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                                <tbody>
+                                    <tr>
+                                        <td rowspan="2">img</td>
+                                        <td>Marcus Harris</td>
+                                        <td>13</td>
+                                        <td>24</td>
+                                        <td>1</td>
+                                        <td>0</td>
+                                        <td>54.17</td>
+                                        <td class="ender"></td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="6">
+                                            <div class="expandable">
+                                                <div class="expand-head">
+                                                    <div class="expander">
+                                                        <p class="icon-down"></p>
+                                                    </div>
+                                                    <div class="expand-title">lbw b Stuart Board</div>
+                                                </div>
+                                                <div class="expand-body">
+                                                    <p class="expand-text">
+                                                        <span class="expand-lead">6.6</span>
+                                                        <span class="expand-info">S Broad to Harris, OUT! LBW! The review is retained but Australia lose their second wicket in the form of Marcus Harris. This was pitched on a length around the fourth stump line by Broad, he gets it to angle into the southpaw. Harris looks to come on the front foot and defend it but misses the ball to get hit high on the pad. The English players appeal and the umpire raises his finger after thinking for a long time. Harris is not totally convinced that this would hit the stumps. He has a chat with Labuschagne at the non-striker's end and goes for the review at the last second. Ultra Edge comes in and shows no edge on that. Ball Tracker comes in now, pitching outside off, impact in line and wickets CLIPPING! It is just touching the top of middle and leg poles and thus it is Umpire's call. Australia in a spot of bother now.</span>
+                                                        <span class="expand-end">28/2</span>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                                <tbody>
+                                    <tr>
+                                        <td rowspan="2">img</td>
+                                        <td>Marcus Harris</td>
+                                        <td>13</td>
+                                        <td>24</td>
+                                        <td>1</td>
+                                        <td>0</td>
+                                        <td>54.17</td>
+                                        <td class="ender"></td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="6">
+                                            <div class="expandable">
+                                                <div class="expand-head">
+                                                    <div class="expander">
+                                                        <p class="icon-down"></p>
+                                                    </div>
+                                                    <div class="expand-title">lbw b Stuart Board</div>
+                                                </div>
+                                                <div class="expand-body">
+                                                    <p class="expand-text">
+                                                        <span class="expand-lead">6.6</span>
+                                                        <span class="expand-info">S Broad to Harris, OUT! LBW! The review is retained but Australia lose their second wicket in the form of Marcus Harris. This was pitched on a length around the fourth stump line by Broad, he gets it to angle into the southpaw. Harris looks to come on the front foot and defend it but misses the ball to get hit high on the pad. The English players appeal and the umpire raises his finger after thinking for a long time. Harris is not totally convinced that this would hit the stumps. He has a chat with Labuschagne at the non-striker's end and goes for the review at the last second. Ultra Edge comes in and shows no edge on that. Ball Tracker comes in now, pitching outside off, impact in line and wickets CLIPPING! It is just touching the top of middle and leg poles and thus it is Umpire's call. Australia in a spot of bother now.</span>
+                                                        <span class="expand-end">28/2</span>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                                <tbody>
+                                    <tr>
+                                        <td rowspan="2">img</td>
+                                        <td>Marcus Harris</td>
+                                        <td>13</td>
+                                        <td>24</td>
+                                        <td>1</td>
+                                        <td>0</td>
+                                        <td>54.17</td>
+                                        <td class="ender"></td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="6">
+                                            <div class="expandable">
+                                                <div class="expand-head">
+                                                    <div class="expander">
+                                                        <p class="icon-down"></p>
+                                                    </div>
+                                                    <div class="expand-title">lbw b Stuart Board</div>
+                                                </div>
+                                                <div class="expand-body">
+                                                    <p class="expand-text">
+                                                        <span class="expand-lead">6.6</span>
+                                                        <span class="expand-info">S Broad to Harris, OUT! LBW! The review is retained but Australia lose their second wicket in the form of Marcus Harris. This was pitched on a length around the fourth stump line by Broad, he gets it to angle into the southpaw. Harris looks to come on the front foot and defend it but misses the ball to get hit high on the pad. The English players appeal and the umpire raises his finger after thinking for a long time. Harris is not totally convinced that this would hit the stumps. He has a chat with Labuschagne at the non-striker's end and goes for the review at the last second. Ultra Edge comes in and shows no edge on that. Ball Tracker comes in now, pitching outside off, impact in line and wickets CLIPPING! It is just touching the top of middle and leg poles and thus it is Umpire's call. Australia in a spot of bother now.</span>
+                                                        <span class="expand-end">28/2</span>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                                <tbody>
+                                    <tr>
+                                        <td rowspan="2">img</td>
+                                        <td>Marcus Harris</td>
+                                        <td>13</td>
+                                        <td>24</td>
+                                        <td>1</td>
+                                        <td>0</td>
+                                        <td>54.17</td>
+                                        <td class="ender"></td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="6">
+                                            <div class="expandable">
+                                                <div class="expand-head">
+                                                    <div class="expander">
+                                                        <p class="icon-down"></p>
+                                                    </div>
+                                                    <div class="expand-title">lbw b Stuart Board</div>
+                                                </div>
+                                                <div class="expand-body">
+                                                    <p class="expand-text">
+                                                        <span class="expand-lead">6.6</span>
+                                                        <span class="expand-info">S Broad to Harris, OUT! LBW! The review is retained but Australia lose their second wicket in the form of Marcus Harris. This was pitched on a length around the fourth stump line by Broad, he gets it to angle into the southpaw. Harris looks to come on the front foot and defend it but misses the ball to get hit high on the pad. The English players appeal and the umpire raises his finger after thinking for a long time. Harris is not totally convinced that this would hit the stumps. He has a chat with Labuschagne at the non-striker's end and goes for the review at the last second. Ultra Edge comes in and shows no edge on that. Ball Tracker comes in now, pitching outside off, impact in line and wickets CLIPPING! It is just touching the top of middle and leg poles and thus it is Umpire's call. Australia in a spot of bother now.</span>
+                                                        <span class="expand-end">28/2</span>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                                <tbody>
+                                    <tr>
+                                        <td rowspan="2">img</td>
+                                        <td>Marcus Harris</td>
+                                        <td>13</td>
+                                        <td>24</td>
+                                        <td>1</td>
+                                        <td>0</td>
+                                        <td>54.17</td>
+                                        <td class="ender"></td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="6">
+                                            <div class="expandable">
+                                                <div class="expand-head">
+                                                    <div class="expander">
+                                                        <p class="icon-down"></p>
+                                                    </div>
+                                                    <div class="expand-title">lbw b Stuart Board</div>
+                                                </div>
+                                                <div class="expand-body">
+                                                    <p class="expand-text">
+                                                        <span class="expand-lead">6.6</span>
+                                                        <span class="expand-info">S Broad to Harris, OUT! LBW! The review is retained but Australia lose their second wicket in the form of Marcus Harris. This was pitched on a length around the fourth stump line by Broad, he gets it to angle into the southpaw. Harris looks to come on the front foot and defend it but misses the ball to get hit high on the pad. The English players appeal and the umpire raises his finger after thinking for a long time. Harris is not totally convinced that this would hit the stumps. He has a chat with Labuschagne at the non-striker's end and goes for the review at the last second. Ultra Edge comes in and shows no edge on that. Ball Tracker comes in now, pitching outside off, impact in line and wickets CLIPPING! It is just touching the top of middle and leg poles and thus it is Umpire's call. Australia in a spot of bother now.</span>
+                                                        <span class="expand-end">28/2</span>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                                <tbody>
+                                    <tr>
+                                        <td rowspan="2">img</td>
+                                        <td>Marcus Harris</td>
+                                        <td>13</td>
+                                        <td>24</td>
+                                        <td>1</td>
+                                        <td>0</td>
+                                        <td>54.17</td>
+                                        <td class="ender"></td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="6">
+                                            <div class="expandable">
+                                                <div class="expand-head">
+                                                    <div class="expander">
+                                                        <p class="icon-down"></p>
+                                                    </div>
+                                                    <div class="expand-title">lbw b Stuart Board</div>
+                                                </div>
+                                                <div class="expand-body">
+                                                    <p class="expand-text">
+                                                        <span class="expand-lead">6.6</span>
+                                                        <span class="expand-info">S Broad to Harris, OUT! LBW! The review is retained but Australia lose their second wicket in the form of Marcus Harris. This was pitched on a length around the fourth stump line by Broad, he gets it to angle into the southpaw. Harris looks to come on the front foot and defend it but misses the ball to get hit high on the pad. The English players appeal and the umpire raises his finger after thinking for a long time. Harris is not totally convinced that this would hit the stumps. He has a chat with Labuschagne at the non-striker's end and goes for the review at the last second. Ultra Edge comes in and shows no edge on that. Ball Tracker comes in now, pitching outside off, impact in line and wickets CLIPPING! It is just touching the top of middle and leg poles and thus it is Umpire's call. Australia in a spot of bother now.</span>
+                                                        <span class="expand-end">28/2</span>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                                <tbody>
+                                    <tr>
+                                        <td rowspan="2">img</td>
+                                        <td>Marcus Harris</td>
+                                        <td>13</td>
+                                        <td>24</td>
+                                        <td>1</td>
+                                        <td>0</td>
+                                        <td>54.17</td>
+                                        <td class="ender"></td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="6">
+                                            <div class="expandable">
+                                                <div class="expand-head">
+                                                    <div class="expander">
+                                                        <p class="icon-down"></p>
+                                                    </div>
+                                                    <div class="expand-title">lbw b Stuart Board</div>
+                                                </div>
+                                                <div class="expand-body">
+                                                    <p class="expand-text">
+                                                        <span class="expand-lead">6.6</span>
+                                                        <span class="expand-info">S Broad to Harris, OUT! LBW! The review is retained but Australia lose their second wicket in the form of Marcus Harris. This was pitched on a length around the fourth stump line by Broad, he gets it to angle into the southpaw. Harris looks to come on the front foot and defend it but misses the ball to get hit high on the pad. The English players appeal and the umpire raises his finger after thinking for a long time. Harris is not totally convinced that this would hit the stumps. He has a chat with Labuschagne at the non-striker's end and goes for the review at the last second. Ultra Edge comes in and shows no edge on that. Ball Tracker comes in now, pitching outside off, impact in line and wickets CLIPPING! It is just touching the top of middle and leg poles and thus it is Umpire's call. Australia in a spot of bother now.</span>
+                                                        <span class="expand-end">28/2</span>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                                <tbody>
+                                    <tr>
+                                        <td rowspan="2">img</td>
+                                        <td>Marcus Harris</td>
+                                        <td>13</td>
+                                        <td>24</td>
+                                        <td>1</td>
+                                        <td>0</td>
+                                        <td>54.17</td>
+                                        <td class="ender"></td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="6">
+                                            <div class="expandable">
+                                                <div class="expand-head">
+                                                    <div class="expander">
+                                                        <p class="icon-down"></p>
+                                                    </div>
+                                                    <div class="expand-title">lbw b Stuart Board</div>
+                                                </div>
+                                                <div class="expand-body">
+                                                    <p class="expand-text">
+                                                        <span class="expand-lead">6.6</span>
+                                                        <span class="expand-info">S Broad to Harris, OUT! LBW! The review is retained but Australia lose their second wicket in the form of Marcus Harris. This was pitched on a length around the fourth stump line by Broad, he gets it to angle into the southpaw. Harris looks to come on the front foot and defend it but misses the ball to get hit high on the pad. The English players appeal and the umpire raises his finger after thinking for a long time. Harris is not totally convinced that this would hit the stumps. He has a chat with Labuschagne at the non-striker's end and goes for the review at the last second. Ultra Edge comes in and shows no edge on that. Ball Tracker comes in now, pitching outside off, impact in line and wickets CLIPPING! It is just touching the top of middle and leg poles and thus it is Umpire's call. Australia in a spot of bother now.</span>
+                                                        <span class="expand-end">28/2</span>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                                <tbody>
+                                    <tr>
+                                        <td>Extras</td>
+                                        <td>29</td>
+                                        <td>(NB 4, W 3, B 8, LB 14)</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Total runs</td>
+                                        <td>497</td>
+                                        <td>(8 wkts, 126 ov)</td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="6">
+                                            <div class="">Yet to bat</div>
+                                            <div class="">
+                                                <span>Josh Hazlewood</span>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="6">
+                                            <div class="">Fall of wickets</div>
+                                            <div class="">
+                                                <span>
+                                                    <span>1/1</span>
+                                                    <span>(D. Warner, 0.4 ov)</span>
+                                                    <span> · </span>
+                                                </span>
+                                                <span>
+                                                    <span>28/2</span>
+                                                    <span>(M. Harris, 6.6 ov)</span>
+                                                    <span> · </span>
+                                                </span>
+                                                <span>
+                                                    <span>144/3</span>
+                                                    <span>(M. Labuschagne, 39.2 ov)</span>
+                                                    <span> · </span>
+                                                </span>
+                                                <span>
+                                                    <span>183/4</span>
+                                                    <span>(T. Head, 48.4 ov)</span>
+                                                    <span></span>
+                                                </span>
+                                                <span>
+                                                    <span>245/5</span>
+                                                    <span>(M. Wade, 60.5 ov)</span>
+                                                    <span></span>
+                                                </span>
+                                                <span>
+                                                    <span>396</span>
+                                                    <span>(T. Paine, 101.1 ov)</span>
+                                                    <span></span>
+                                                </span>
+                                                <span>
+                                                    <span>387/7</span>
+                                                    <span>(P. Cummins, 104.6 ov)</span>
+                                                    <span></span>
+                                                </span>
+                                                <span>
+                                                    <span>438/8</span>
+                                                    <span>(S. Smith, 117.5 ov)</span>
+                                                </span>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="score-divider"></div>
+                        <div class="score-sub-card">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Bowling</th>
+                                        <th></th>
+                                        <th>O</th>
+                                        <th>M</th>
+                                        <th>R</th>
+                                        <th>W</th>
+                                        <th>Econ</th>
+                                        <th></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <img src="" alt="">
+                                        </td>
+                                        <td>Stuart Board</td>
+                                        <td>25.0</td>
+                                        <td>2</td>
+                                        <td>97</td>
+                                        <td>3</td>
+                                        <td>3.88</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr></tr>
+                                </tbody>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <img src="" alt="">
+                                        </td>
+                                        <td>Stuart Board</td>
+                                        <td>25.0</td>
+                                        <td>2</td>
+                                        <td>97</td>
+                                        <td>3</td>
+                                        <td>3.88</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr></tr>
+                                </tbody>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <img src="" alt="">
+                                        </td>
+                                        <td>Stuart Board</td>
+                                        <td>25.0</td>
+                                        <td>2</td>
+                                        <td>97</td>
+                                        <td>3</td>
+                                        <td>3.88</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr></tr>
+                                </tbody>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <img src="" alt="">
+                                        </td>
+                                        <td>Stuart Board</td>
+                                        <td>25.0</td>
+                                        <td>2</td>
+                                        <td>97</td>
+                                        <td>3</td>
+                                        <td>3.88</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr></tr>
+                                </tbody>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <img src="" alt="">
+                                        </td>
+                                        <td>Stuart Board</td>
+                                        <td>25.0</td>
+                                        <td>2</td>
+                                        <td>97</td>
+                                        <td>3</td>
+                                        <td>3.88</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr></tr>
+                                </tbody>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <img src="" alt="">
+                                        </td>
+                                        <td>Stuart Board</td>
+                                        <td>25.0</td>
+                                        <td>2</td>
+                                        <td>97</td>
+                                        <td>3</td>
+                                        <td>3.88</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr></tr>
+                                </tbody>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <img src="" alt="">
+                                        </td>
+                                        <td>Stuart Board</td>
+                                        <td>25.0</td>
+                                        <td>2</td>
+                                        <td>97</td>
+                                        <td>3</td>
+                                        <td>3.88</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr></tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="inn-tab-content" id="contentE2">
+                       
+                    </div>
+                </div>
+            </div>
+
+            <div class="card tabbed" id="commentaryCard">
+                <div class="pretext">
+                    <div class="comment-block">
+                        <span>11:18 pm</span>
+                        <span>That ends the fourth Test coverage at Old Trafford. It is Australia who are 2-1 up. Ashes is theirs, will the series be as well? England will want to say something about that in 4 days' time. Join us on Thursday, 12th September, 2019 at 11 am local (1000 GMT) for all the action from the 5th Test at The Oval. ADIOS! TAKE CARE!</span>
+                    </div>
+                    <div class="comment-block">
+                        <span>11:13 pm</span>
+                        <span>
+                            STEVEN SMITH HAS BEEN NAMED THE MAN OF THE MATCH (Is anyone surprised?) 10 days ago, he was sitting in the dressing room, watching the agony of his side not being able to clinch a win. But here, come Old Trafford, a new dawn has been set.
+                        </span>
+                    </div>
+                    <div class="comment-block">
+                        <span>11:12 pm</span>
+                        <span>
+                            Ohhh... with the Ashes over (even though the series is not over yet), the interviews keep coming, don't they? Josh Hazlewood trots up now. Hazlewood says it is a fantastic feeling and feels all the bowlers bowled really well. Further adds Cummins is a huge engine and Lyon was good too. States you need to be ready when the skipper calls you on and feels Marnus Labuschagne too contributed with an important wicket of Jack Leach. Tells he is still feeling pretty good now but might be a little sore tomorrow. Mentions another great Test match was visible. Informs his heart was definitely beating fast towards the end but he is pleased they got over the line. Ends by saying they would still be eager to win the series here and would go all out in the last game.
+                        </span>
+                    </div>
+                    <div class="comment-block">
+                        <span>11:10 pm</span>
+                        <span>
+                            Marnus Labuschagne now comes up for a chat. Labuschagne says it means a lot to bring the urn back to Australia. States it is one of the best series he has played and it is even better since it is won in England. Further adds Test cricket was at its best as wickets came quickly but England's lower order played really well. Says the Brits will always come hard which was visible here. On him being given the ball by Paine and then getting the breakthrough, Marnus states he wanted to trust himself with the ball. Cheekily says that he dragged the previous ball before the wicket one down but then kept telling himself to believe in himself. Adds he is lost for words at the moment. Ends by saying it was a privilege to play for Australia, the opportunity that came to him, wasn't how he expected it to but he is delighted he did well then.
+                        </span>
+                    </div>
+                    <div class="comment-block">
+                        <span>11:05 pm</span>
+                        <span>
+                            Time for some interviews. Steven Smith first up. Smith says it feels amazing that the Ashes is coming home now. Further adds he has come here a few times but things never went their way. States winning the Ashes here is one thing which he wanted to tick off his bucket list. Informs the boys were getting a little bit tired out there towards the end. Tells England fought really hard especially Overton, who was really good but fortunately the boys got the job done. Says he feels absolutely delighted with how he has performed in this series especially after what he has gone through.
+                        </span>
+                    </div>
+                </div>
+                <div class="end-of-over">
+                    <div class="head">
+                        <div class="left">
+                            <p class="title"><strong>End of over 92</strong></p>
+                            <p class="sub small-text">0 Runs <span> · </span> 0 0 <strong>W</strong></p>
+                        </div>
+                        <div class="right">
+                            <p class="title"><strong>ENG 197/10</strong></p>
+                            <p class="sub small-text">RR: 2.15</p>
+                        </div>
+                        <div class="under-text small-text">
+                            <div class="under-text-left">
+                                <div class="left">Stuart Broad</div>
+                                <div class="right">0* (3)</div>
+                            </div>
+                            <div class="under-text-right">
+                                <div class="left">Josh Hazlewood</div>
+                                <div class="right">2/31 (17.3)</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="over-body">
+                        <div class="raised-card">
+                            <div class="banner-item indigo">
+                                <div class="banner-info">
+                                    <p class="card-text-md">Fall of wicket</p>
+                                    <p class="card-text-small">Craig Overton 21 (105)</p>
+                                    <p class="card-text-small">lbw b Josh Hazlewood</p>
+                                </div>
+                                <div class="banner-photo">
+                                    <img src="./img/images.jpg" alt="player" class="photo">
+                                </div>
+                            </div>
+                            <div class="raised-card-content">
+                                <div class="side-icon">W</div>
+                                <div class="raised-card-text">
+                                    91.3: J Hazlewood to Overton, OUT! LBW! Three reds and Overton is a goner! Marvelous scenes out there as AUSTRALIA HAVE RETAINED THE ASHES! Overton's fighting innings comes to an end. It is Josh Hazlewood who gets the last wicket. A good nut. It lands on off and jags back in. Overton looks to defend but misses to get hit on the front pad. A huge appeal. It looked a touch high but up goes the finger. Overton has no choice but to review. He signals the 'T'. Time for the replays. Ultra Edge shows no bat. Time for the Ball Tracker and it shows the ball to be hitting the leg pole. Australia continue to celebrate. THEY WIN BY 185 RUNS AND LEAD THE SERIES 2-1!
+                                </div>
+                            </div>
+                        </div>
+                        <p>
+                            10:44 pm Is that the game? Overton has been adjudged LBW. He has taken the review immediately. Hit on the knee roll. Is it a bit too high? Nothing on the Ultra Edge as the ball goes past the bat. Three reds on Ball Tracker. THE ASHES STAY WITH AUSTRALIA!
+                        </p>
+                        <p>
+                            <span>0</span>
+                            91.2: J Hazlewood to Overton, A short one and on the body, Overton looks to duck again but the ball hits him on the body. That must have hurt but you need to brush it off and continue.
+                        </p>
+                        <p>
+                            <span>0</span>
+                            91.1: J Hazlewood to Overton, Good length and on middle, this is defended.
+                        </p>
+                        <p>
+                            10:42 pm Bowling change, again! Just one over for Marnus Labuschagne to break the stand. Hazlewood is on now. His numbers so far, 17-5-31-1.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card tabbed" id="newsCard">
+                <div class="news-container">
+                    <div class="news-card">
+                        <div class="news-text-container">
+                            <div class="news-link">
+                                <a href="https://www.cricbuzz.com/cricket-news/109809/live-cricket-score-england-vs-australia-ashes-2019-4th-test-day-5">Live Cricket Score - England vs Australia, Ashes 2019, 4th Test, Day 5 - 
+Cricbuzz</a>
+                            </div>
+                            <div class="news-sub-text">
+                                <span class="md-text">Cricbuzz</span> <span class="space">·</span> <span class="small-text">3 days ago</span>
+                            </div>
+                        </div>
+                        <div class="news-media">
+                            <img src="./img/news_img.jpg" alt="news_img">
+                        </div>
+                    </div>
+                    <div class="news-card">
+                        <div class="news-text-container">
+                            <div class="news-link">
+                                <a href="https://www.cricbuzz.com/cricket-news/109809/live-cricket-score-england-vs-australia-ashes-2019-4th-test-day-5">Live Cricket Score - England vs Australia, Ashes 2019, 4th Test, Day 5 - 
+Cricbuzz</a>
+                            </div>
+                            <div class="news-sub-text">
+                                <span class="md-text">Cricbuzz</span> <span class="space">·</span> <span class="small-text">3 days ago</span>
+                            </div>
+                        </div>
+                        <div class="news-media">
+                            <img src="./img/news_img.jpg" alt="news_img">
+                        </div>
+                    </div>
+                    <div class="news-card">
+                        <div class="news-text-container">
+                            <div class="news-link">
+                                <a href="https://www.cricbuzz.com/cricket-news/109809/live-cricket-score-england-vs-australia-ashes-2019-4th-test-day-5">Live Cricket Score - England vs Australia, Ashes 2019, 4th Test, Day 5 - 
+Cricbuzz</a>
+                            </div>
+                            <div class="news-sub-text">
+                                <span class="md-text">Cricbuzz</span> <span class="space">·</span> <span class="small-text">3 days ago</span>
+                            </div>
+                        </div>
+                        <div class="news-media">
+                            <img src="./img/news_img.jpg" alt="news_img">
+                        </div>
+                    </div>
+                    <div class="news-card">
+                        <div class="news-text-container">
+                            <div class="news-link">
+                                <a href="https://www.cricbuzz.com/cricket-news/109809/live-cricket-score-england-vs-australia-ashes-2019-4th-test-day-5">Live Cricket Score - England vs Australia, Ashes 2019, 4th Test, Day 5 - 
+Cricbuzz</a>
+                            </div>
+                            <div class="news-sub-text">
+                                <span class="md-text">Cricbuzz</span> <span class="space">·</span> <span class="small-text">3 days ago</span>
+                            </div>
+                        </div>
+                        <div class="news-media">
+                            <img src="./img/news_img.jpg" alt="news_img">
+                        </div>
+                    </div>
+                    <div class="news-card">
+                        <div class="news-text-container">
+                            <div class="news-link">
+                                <a href="https://www.cricbuzz.com/cricket-news/109809/live-cricket-score-england-vs-australia-ashes-2019-4th-test-day-5">Live Cricket Score - England vs Australia, Ashes 2019, 4th Test, Day 5 - 
+Cricbuzz</a>
+                            </div>
+                            <div class="news-sub-text">
+                                <span class="md-text">Cricbuzz</span> <span class="space">·</span> <span class="small-text">3 days ago</span>
+                            </div>
+                        </div>
+                        <div class="news-media">
+                            <img src="./img/news_img.jpg" alt="news_img">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="footer-card">
+                <p class="p2">Toss: <span class="grey">AUS won the toss and decided to bat</span></p>
+                <p class="p2">Stadium: <a href="#">Old Trafford Cricket Ground</a></p>
+            </div>
+            <div class="footer-card">
+                <p class="p3 grey small-text">
+                    All times are in India Standard Time
+                </p>
+            </div>
+        </div>
+        <div class="score-overlay-banner" id="scroll-banner">
+            <div class="content">
+                <span class="team team-left">
+                    <img src="./img/flag.png" alt="flag" class="flag-md">
+                </span>
+                <span class="result result-left">
+                    <p class="p1">497/8d</p>
+                    <p class="p1">186/6d</p>
+                </span>
+                <span class="result-center">
+                    <p class="small-text">AUS won by 185 runs</p>
+                </span>
+                <span class="result result-right">
+                    <p class="p1">301</p>
+                    <p class="p1">197</p>
+                </span>
+                <span class="team team-right">
+                    <img src="./img/flag2.png" alt="flag" class="flag-md">
+                </span>
+            </div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script> -->
+
+    <script>
+        $(document).ready(function () {
+
+            $(".tabbed").hide(0, function(){
+               $("#" + $(".tab.active").attr("data-tab")).show(0);
+            });
+
+            $(".inn-tab-content").hide(0, function(){
+                $("#" + $(".inn-tab.active").attr("data-innTab")).show(0);
+            })
+
+            $(document).scroll(function (e) {
+                let scroll = $(window).scrollTop();
+                if (scroll > 180) {
+                    $("#scroll-banner").slideDown(100);
+                } else {
+                    $("#scroll-banner").slideUp(100);
+                }
+            });
+
+            $(".tab").click(function(){
+                $(".tab").removeClass("active");
+                $(this).addClass("active");
+                let tab = this;
+                $(".tabbed").hide(0, function(){
+                    $("#" + $(tab).attr("data-tab")).show();
+                });
+            });
+
+            $(".inn-tab").click(function(){
+                $(".inn-tab").removeClass("active");
+                $(this).addClass("active");
+                let tab = this;
+                $(".inn-tab-content").animate({width: 'toggle'}, function(){
+                    $("#" + $(tab).attr("data-innTab")).show();
+                });
+            });
+
+            $(".expand-title").click(function(){
+                $("#" + $(this).attr("data-slideText")).slideToggle(200);
+            })
+
+        });
+    </script>
+</body>
+
+</html>

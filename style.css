@@ -1,0 +1,689 @@
+body{
+    font-family: Arial, sans-serif;
+    background-color: #F2F2F2;
+    margin: 0;
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+/* TOP BAR */
+
+.navbar{
+    margin: 0 0;
+    background-color: #212121;
+    color: #fff;
+    width: 100%;
+    font-size: 16px;
+    display: flex;
+}
+
+.back{
+    justify-content: flex-start;
+    margin: 14px;
+    padding: 4px 4px 0 15px;
+}
+
+.back-img{
+    width: 20px;
+}
+
+.close{
+    justify-content: flex-end;
+    font-size: 28px;
+    padding: 12px;
+    padding-right: 28px;
+}
+
+.header{
+    flex: 1;
+    padding: 18px 5px;
+    margin-right: 0;
+}
+
+/* CARDS */
+
+.info-cards{
+    margin: 0 auto;
+    width: 630px;
+    background-color: #FFF;
+    box-shadow: 0 0 3px 0 hsla(0, 0%, 28%, 0.4);
+}
+
+.card{
+    padding: 1px 0;
+}
+
+.grey{
+    color: rgba(0,0,0, .54);
+}
+
+.small-text{
+    font-size: 12px;
+    margin: 0 auto;
+}
+
+.md-text{
+    font-size: 14px;
+    margin: 0 auto;
+}
+
+.sub-card{
+    margin: 8px;
+    font-size: 14px;
+}
+
+/* LEAD CARD */
+
+.date-text {
+    margin: 0 26px;
+}
+.date-text > p{
+    font-size: 14px;
+    margin: 0 auto;
+}
+
+.country{
+    width: 64px;
+    text-align: center;
+}
+
+.flag-sm{
+    width: 20px;
+    height: 20px;
+}
+
+.flag-md{
+    margin: 0 auto;
+    height: 32px;
+}
+
+.flag-lg{
+    margin: 0 auto;
+    height: 48px;
+}
+
+.country > p{
+    margin: 0 auto;
+    font-size: 14px;
+}
+
+.runs{
+    width: 85px;
+    text-align: center;
+    padding-top: 5px;
+}
+
+.p1{
+    margin: 0 auto;
+}
+
+.runs > p{
+    margin: 0 auto;
+}
+
+.pos > p{
+    padding-bottom: 4px;
+}
+
+.head-content{
+    padding: 24px 0 12px 0;
+    color: rgba(0,0,0, .87)
+}
+
+.match-result{
+    padding: 18px 80px 0 80px;
+    display: flex;
+}
+
+.match-result > .runs{
+    margin: 0 18px;
+}
+
+.match-result > div{
+    justify-content: space-around;
+    width: 20%;
+}
+
+.match-result > .country-left{
+    margin: 0 20px 0 0;
+}
+
+.match-result > .country-right{
+    margin: 0 0 0 20px;
+}
+
+.additional-info{
+    margin-top: 10px;
+    text-align: center;
+}
+
+/* VIDEO PLAYER */
+
+.hero-img{
+    position: relative;
+    color: #FFF;
+    cursor: pointer;
+}
+
+.hero-img > .lead{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.hero-img > .img-overlay{
+    position: absolute;
+    bottom: 4px;
+    background-color: rgba(0,0,0, .6);
+    width: 100%;
+}
+
+.hero-img > .img-overlay > p{
+    padding-left: 26px;
+}
+
+.hero-img > .play-video-icon{
+    position: absolute;
+    top: calc(50% - 20px);
+    left: calc(50% - 20px);
+}
+
+.hero-img > .play-video-icon > .play{
+    opacity: 0.7;
+    border-radius: 50%;
+    box-shadow: 0 0 6px 2px rgba(0, 0, 0, 0.8);
+}
+
+.hero-img > .play-video-icon:before{
+    position: absolute;
+    top: calc(50% - 24px);
+    left: calc(50% - 24px);
+    border-radius: 50%;
+    box-shadow:  0 0 6px 3px rgb(0, 0, 0);
+}
+
+/* MAIN TABS */
+
+.tabs{
+    background-color: #FFF;
+    /* box-shadow: 0 4px 1px #4848482a; */
+    color: #000;
+    border-bottom: 4px solid #4848482a;
+}
+
+.tabs > .tab{
+    text-align: center;
+    display: inline-block;
+    width: 24%;
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.tabs > .active, .tabs > .tab:hover{
+    opacity: 0.9;
+}
+
+.tabs > .tab > p{
+    font-size: 12px;
+}
+
+/* SUMMARY TAB */
+
+/* BANNER YELLOW */
+
+.banner-item{
+    padding: 16px;
+    margin: 0 0 28px 0;
+    border-radius: 8px;
+    position: relative;
+    color: #FAFAFA;
+    height: 68px;
+}
+
+.yellow{
+    background-color: #FBC02D;
+}
+
+.indigo{
+    background-color: #152A5E;
+    margin-bottom: 18px;
+}
+
+.banner-info{
+    position: absolute;
+    display: inline-block;
+}
+
+.banner-info > p {
+    margin: 0;
+
+}
+
+.banner-sub-text, .banner-secondary-text{
+    font-size: 14px;
+    padding-bottom: 2px;
+}
+
+.banner-main-text{
+    font-size: 16px;
+}
+
+
+.banner-photo{
+    position: absolute;
+    right: 16px;
+    display: inline-block;
+}
+
+.photo{
+    max-width: 70px;
+    max-height: 70px;
+    border: 2px solid #FAFAFA;
+    border-radius: 50%; 
+}
+
+/* SUMMARY DIVIDER */
+
+.divider{
+    width: 100%;
+    display: flex;
+    margin: 0;
+    color: #80868B;
+}
+
+.d-left, .d-right {
+    height: 8px;
+    width: 32%;
+    border-bottom: 2px solid #00000010;
+    text-align: center;
+    justify-content: space-around;
+}
+
+.d-center{
+    margin: 0 10px;
+    width: 36%;
+    justify-content: space-around;
+    font-size: 14px;
+    vertical-align: text-top;
+    display: flex;
+}
+
+.d-center > *{
+    justify-content: space-evenly;
+}
+
+.d-center > span{
+    margin-top: 4px;
+}
+
+/* SUMMARY PLAYER INFO */
+
+.player-info-container{
+    padding: 14px 8px 4px 8px;
+    display: flex;
+    font-size: 14px;
+}
+
+.img-circle{
+    margin: 0 auto;
+    border-radius: 50%; 
+    width: 44px;
+    border: 3px solid #F2F2F2;
+}
+
+.player-cards-left{
+    justify-content: flex-start;
+    text-align: left;
+}
+
+.player-cards-right{
+    justify-content: flex-end;
+    text-align: right;
+}
+
+.player-info-container > div {
+    width: 300px;
+}
+
+.player-card{
+    display: flex;
+    margin: 2px 0;
+    padding: 2px 0;
+}
+
+.player-img{
+    padding: 1px;
+}
+
+.player-cards-right > .player-card > .player-info {
+    margin-right: 0;
+    margin-left: auto;
+}
+
+.player-cards-left > .player-card > .player-img {
+    justify-content: flex-start;
+}
+
+.player-info{
+    margin: 0 4px;
+    padding-top: 6px;
+}
+
+.player-info > p{
+    margin: 0 auto;
+}
+
+/* SCORECARD TAB */
+
+/* INNING TABS */
+
+.inning-tabs{
+    background-color: #F5F5F5;
+    color: #000;
+    display: flex;
+    height: 48px;
+    margin-top: -2px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.inning-tabs > .inn-tab{
+    padding: 8px 16px;
+    text-align: center;
+    flex: 1;
+    width: 24%;
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.inning-tabs > .active{
+    opacity: 0.9;
+    border-bottom: 2px solid rgba(0, 0, 0, 1);
+}
+
+.inning-tabs > .inn-tab > div{
+    font-size: 13px;
+}
+
+/* INNING TAB CONTENT */
+
+.inn-tab-content{
+    padding-bottom: 24px;
+}
+
+.score-sub-card{
+    padding: 16px 0 0 24px;
+}
+
+.score-head{
+    font-size: 12px;
+}
+
+.score-head > tr > th{
+    padding: 1px
+}
+
+.table-lead{
+    width: 50px;
+}
+
+.spacer{
+    width: 390px;
+}
+
+.score-primary-text{
+    font-size: 14px;
+    color: rgba(0,0,0, .87);
+    position: relative;
+}
+
+.score-number{
+    width: 26px;
+    height: 27px;
+}
+
+.expandable{
+    color: rgba(0,0,0, .64)
+}
+
+.expand-body{
+    display: none;
+}
+
+tbody{
+    border: 1px solid rgba(0, 0, 0, 1);
+}
+
+/* .score-divider{} */
+
+/* COMMENTARY */
+
+.pretext{
+    color: #222;
+}
+
+.pretext > .comment-block{
+    padding: 12px 24px;
+    font-size: 14px;
+}
+
+.end-of-over > .head{
+    background-color: #F5F5F5;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 12px 16px;
+}
+
+.head > .left{
+    float: left;
+}
+
+.head > .right{
+    float: right;
+    text-align: right;
+}
+
+.head > div > p{
+    margin: 0 auto;
+}
+
+.head > div > .title{
+    font-size: 14px;
+}
+
+.head > .under-text{
+    margin: 36px auto 0 auto;
+    padding-top: 6px;
+    border-top: 2px solid rgba(0, 0, 0, 0.05);
+    display: flex;
+}
+
+.under-text-left{
+    float: left;
+    padding-right: 20px;
+}
+
+.under-text-right{
+    float: right;
+    text-align: right;
+    padding-left: 20px
+}
+
+.under-text-left, .under-text-right{
+    width: 50%;
+}
+
+.under-text-left > .left{
+    float: left;
+}
+
+.under-text-left > .right{
+    float: right;
+}
+
+.under-text-right > .left{
+    float: left;
+}
+
+.under-text-right > .right{
+    float: right;
+}
+
+/* BODY */
+
+.raised-card{
+    margin: 12px 20px 4px 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
+    padding: 8px;
+}
+
+.raised-card-content{
+    display: flex;
+}
+
+.card-text-small{
+    font-size: 12px;
+    line-height: 20px;
+}
+
+.card-text-md{
+    font-size: 16px;
+    padding-top: 4px;
+    line-height: 24px; 
+}
+
+.raised-card-content > .side-icon{
+    margin-right: 14px;
+    /* width: 32px; */
+    height: 18px;
+    background-color: #E11227;
+    padding: 4px 6px 4px 6px;
+    border-radius: 2px;
+    color: #FFF;
+    font-size: 14px
+}
+
+.raised-card-content > .raised-card-text{
+    color: #222;
+    padding: 0 8px 6px 8px;
+    font-size: 14px;
+    flex-grow: 1;
+    white-space: normal;
+    font-weight: normal;
+}
+
+.over-body > p{
+    padding: 14px 32px;
+    margin: 0 auto;
+    font-size: 14px;
+    color: #222;
+    display: inline-flex;
+}
+
+.over-body > p > span{
+    background-color: #F5F5F5;
+    padding: 3px 2px 6px 8px;
+    margin-right: 28px;
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+}
+
+/* NEWS */
+
+.news-container{
+    padding: 12px 24px;
+}
+
+.news-card{
+    margin: 12px 0;
+    border-radius: 6px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 16px;
+    display: flex;
+}
+
+.news-text-container{
+    flex: 3;
+    padding-right: 42px;
+}
+
+.news-sub-text{
+    color:  rgba(0, 0, 0, 0.6);
+    margin-top: 8px;
+}
+
+.news-media{
+    flex: 1;
+    width: 137px;
+}
+
+/* FOOTER */
+
+.footer{
+    margin: 0 auto;
+    width: 630px;
+    background-color: #F8F9FA;
+    box-shadow: inset 0 3px 2px rgba(0,0,0,0.1);
+}
+
+.footer-card{
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 12px 24px;
+    font-size: 14px;
+    box-shadow: 0 0 3px rgba(0,0,0,0.1);
+}
+
+
+.footer-card > .p2{
+    margin: 0 auto;
+    padding: 5px 0;
+}
+
+.footer-card > .p3{
+    margin: 0 auto;
+    padding: 3px 0;
+}
+
+a{
+    text-decoration: none;
+    color: #1967D2;
+}
+
+/* SCROLL SCORE OVERLAY */
+
+.score-overlay-banner{
+    display: block;
+    position: fixed;
+    top: 0;
+    background-color: #FFF;
+    height: 60px;
+    width: 100%;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
+    display: none;
+}
+
+.score-overlay-banner > .content{
+    width: 592px;
+    height: 60px;
+    margin: 0 auto;
+    padding: 0 10px;
+    display: flex;
+}
+
+.team{
+    padding: 14px 0;
+}
+
+.team-right{
+    justify-self: flex-end;
+}
+
+.result{
+    padding: 12px 10px;
+}
+
+.result-center{
+    text-align: center;
+    padding: 4% 0;
+    flex: 1;
+}
